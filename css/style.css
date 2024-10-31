@@ -1,28 +1,9 @@
-/* 
-
-Tinker Template
-
-http://www.templatemo.com/tm-506-tinker
-
-*/
-
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', arial, sans-serif;
-}
-
-.responsive-paragraph {
-	width: 80%;
-	/* El párrafo ocupará el 80% del ancho de la pantalla */
-	margin: 0 auto;
-	/* Centrar el párrafo */
-	font-size: 2em;
-	/* Tamaño de fuente básico */
-}
-
 p {
-	line-height: 1.8;
+	max-width: 1000px;
+	/* Ajusta el ancho máximo del párrafo */
+	margin: 0 auto;
+	/* Centra el párrafo */
+	padding: 0 5px;
 	/* Ajusta el valor según el efecto deseado */
 }
 
@@ -47,6 +28,103 @@ h1 {
 	margin: 0;
 	padding: 20px;
 }
+
+h2 {
+	font-family: 'Brush Script MT', cursive;
+	/* Fuente cursiva para el título */
+	color: #ff1493;
+	/* Color rosa fuerte */
+	font-size: 3em;
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+	/* Sombra para resaltar el texto */
+	margin: 0;
+	padding: 20px;
+}
+
+
+/* Estilo para el título de la sección */
+.titulo-personajes {
+	font-family: 'Brush Script MT', cursive;
+	color: #ff1493;
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.personajes-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.perfil-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.btn-ver {
+	margin-top: 10px;
+	padding: 5px 10px;
+	background-color: #ff1493;
+	/* color de fondo del botón */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Estilos del modal */
+.descripcion-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	z-index: 1000;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.perfil-img-grande {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.cerrar {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.btn-volver {
+	margin-top: 20px;
+	padding: 5px 15px;
+	background-color: #ff1493;
+	/* color de fondo del botón */
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.descripcion-contenido {
+	max-width: 500px;
+	text-align: center;
+	margin-top: 10px;
+}
+
 
 .subtitulo {
 	font-size: 1.5em;
@@ -112,8 +190,8 @@ ul {
 
 p {
 	color: #7a7a7a;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 25px;
 }
 
 .parallax-content {
@@ -410,7 +488,7 @@ bootstrap.min.css:5 .navbar-toggle {
 }
 
 .filter-categories {
-	;
+
 	margin-top: 60px;
 }
 

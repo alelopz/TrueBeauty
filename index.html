@@ -25,7 +25,7 @@
 
                     <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
                         data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -61,6 +61,7 @@
     </div>
 
     <section id="About" class="page-section">
+        <h1>Sobre la pagina</h1>
         <p style="font-size: 1.5em; color: antiquewhite;">La historia sigue a Lim Ju Kyung, una adolescente que sufre
             acoso
             por su
@@ -77,15 +78,69 @@
             a sí misma más allá de su
             apariencia.</p>
         <h2>Publico al que va dirigido</h2>
-        <p class="responsive-paragraph style = font-size: 1.5em; color: antiquewhite;">La pagina que será diseñada
-            estará dirigida a fans de True
-            Beauty, especialmente a adolescentes y jóvenes adultos interesados en historias
-            románticas, escolares y de autodescubrimiento.</p>
-        <p class="responsive-paragraph style = font-size: 1.5em; color: antiquewhite;"> También será ideal para quienes
-            disfrutan de los K-dramas y
-            de temas relacionados con la autoaceptación, el crecimiento personal y la presión social sobre los
-            estándares de belleza. </p>
+        <p style="font-size: 1.5em; color: antiquewhite;">La pagina que será diseñada
+            estará dirigida a fans de True Beauty, especialmente a adolescentes y jóvenes adultos interesados en
+            historias románticas, escolares y de autodescubrimiento.</p>
+        <p style="font-size: 1.5em; color: antiquewhite;"> También será ideal para quienes
+            disfrutan de los K-dramas y de temas relacionados con la autoaceptación, el crecimiento personal y la
+            presión social sobre los estándares de belleza. </p>
     </section>
+
+    <section id="personajes" class="content-wrapper">
+        <h2 class="titulo-personajes">Personajes</h2>
+        <div class="personajes-container">
+            <!-- Personaje 1 -->
+            <div class="personaje">
+                <img src="img/ju_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img">
+                <h3 class="nombre-personaje">Lim Ju Kyung</h3>
+                <button onclick="verDescripcion('juKyung')" class="btn-ver">Ver</button>
+            </div>
+
+            <!-- Personaje 2 -->
+            <div class="personaje">
+                <img src="img/lee_su_ho.jpg" alt="Lee Su Ho" class="perfil-img">
+                <h3 class="nombre-personaje">Lee Su Ho</h3>
+                <button onclick="verDescripcion('suHo')" class="btn-ver">Ver</button>
+            </div>
+
+            <!-- Personaje 3 -->
+            <div class="personaje">
+                <img src="img/han_seo_jun.jpg" alt="Han Seo Jun" class="perfil-img">
+                <h3 class="nombre-personaje">Han Seo Jun</h3>
+                <button onclick="verDescripcion('seoJun')" class="btn-ver">Ver</button>
+            </div>
+        </div>
+
+        <!-- Descripciones (modal oculto por defecto) -->
+        <div id="descripcion-juKyung" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('juKyung')" class="cerrar">&times;</span>
+            <img src="img/ju_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img-grande">
+            <h3>Lim Ju Kyung</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Ju Kyung es una adolescente que usa maquillaje para
+                ocultar sus inseguridades y se convierte en una de
+                las chicas más populares de su escuela </p>
+            <button onclick="cerrarDescripcion('juKyung')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-suHo" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('suHo')" class="cerrar">&times;</span>
+            <img src="img/lee_su_ho.jpg" alt="Lee Su Ho" class="perfil-img-grande">
+            <h3>Lee Su Ho</h3>
+            <p>Lee Su Ho es un joven popular y misterioso con un pasado complicado. Es reservado y parece tener un lado
+                oscuro...</p>
+        </div>
+
+        <div id="descripcion-seoJun" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('seoJun')" class="cerrar">&times;</span>
+            <img src="img/han_seo_jun.jpg" alt="Han Seo Jun" class="perfil-img-grande">
+            <h3>Han Seo Jun</h3>
+            <p>Seo Jun es un chico rebelde con un buen corazón. Aunque aparenta ser duro, en el fondo es amable y
+                protector...</p>
+        </div>
+    </section>
+
+
+
 
     <section id="portfolio">
         <div class="content-wrapper">
@@ -267,6 +322,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+    <script src="js/botonVer.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
