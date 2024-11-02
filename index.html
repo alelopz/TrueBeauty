@@ -87,42 +87,74 @@
     </section>
 
     <section id="Personajes" class="content-wrapper">
-        <h2 class="titulo-personajes">Personajes</h2>
+        <h2 class="titulo-personajes">Personajes principales</h2>
         <div class="personajes-container">
-            <!-- Personaje 1 -->
             <div class="personaje">
                 <img src="img/ju_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img">
                 <h3 class="nombre-personaje">Lim Ju Kyung</h3>
                 <button onclick="verDescripcion('juKyung')" class="btn-ver">Ver</button>
             </div>
 
-            <!-- Personaje 2 -->
             <div class="personaje">
                 <img src="img/lee_su_ho.jpg" alt="Lee Su Ho" class="perfil-img">
                 <h3 class="nombre-personaje">Lee Su Ho</h3>
                 <button onclick="verDescripcion('suHo')" class="btn-ver">Ver</button>
             </div>
 
-            <!-- Personaje 3 -->
             <div class="personaje">
                 <img src="img/han_seo_jun.jpg" alt="Han Seo Jun" class="perfil-img">
                 <h3 class="nombre-personaje">Han Seo Jun</h3>
                 <button onclick="verDescripcion('seoJun')" class="btn-ver">Ver</button>
             </div>
+
+            <div class="personaje">
+                <img src="img/Kang_su_jin.jpg" alt="Kang Su jin" class="perfil-img">
+                <h3 class="nombre-personaje">Kang Su-jin</h3>
+                <button onclick="verDescripcion('suJin')" class="btn-ver">Ver</button>
+            </div>
         </div>
 
-        <!-- Descripciones (modal oculto por defecto) -->
-        <div id="descripcion-juKyung" class="descripcion-modal">
-            <span onclick="cerrarDescripcion('juKyung')" class="cerrar">&times;</span>
-            <img src="img/ju_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img-grande">
-            <h3>Lim Ju Kyung</h3>
-            <p style="font-size: 1.5em; color: antiquewhite;">Lim Ju-kyung es una adolescente alegre pero insegura de su
-                apariencia. Tras sufrir acoso, aprende a maquillarse para ocultar sus complejos y ganar aceptación en la
-                escuela.
-                Aunque bondadosa, teme el rechazo si descubren
-                su verdadero rostro. Su relación con Lee Su Ho y Han Seo Jun la ayuda a valorarse más allá de su
-                apariencia. </p>
-            <button onclick="cerrarDescripcion('juKyung')" class="btn-volver">Volver</button>
+        <h2 class="titulo-personajes">Personajes secundarios</h2>
+        <div class="personajes-container">
+            <div class="personaje">
+                <img src="img/hee_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img">
+                <h3 class="nombre-personaje">Lim Hee-kyung</h3>
+                <button onclick="verDescripcion('heekyung')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/lee_su_ho.jpg" alt="Lee Su Ho" class="perfil-img">
+                <h3 class="nombre-personaje">Lee Su Ho</h3>
+                <button onclick="verDescripcion('suHo')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/han_seo_jun.jpg" alt="Han Seo Jun" class="perfil-img">
+                <h3 class="nombre-personaje">Han Seo Jun</h3>
+                <button onclick="verDescripcion('seoJun')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/Kang_su_jin.jpg" alt="Kang Su jin" class="perfil-img">
+                <h3 class="nombre-personaje">Kang Su-jin</h3>
+                <button onclick="verDescripcion('suJin')" class="btn-ver">Ver</button>
+            </div>
+        </div>
+
+        <div id="descripcion-heekyung" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('heekyung')" class="cerrar">&times;</span>
+            <img src="img/hee_kyung.jpg" alt="Lim Hee-kyung" class="perfil-img-grande">
+            <h3>Lim Hee-kyung</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Lim Hee-kyung es la hermana mayor de Ju-kyung, conocida
+                por su personalidad segura, extrovertida y carismática. A
+                diferencia de su hermana, se muestra confiada y directa, siempre expresando lo que piensa sin reservas.
+                Es un gran apoyo
+                para Ju-kyung, alentándola a aceptarse y a enfrentar sus inseguridades. A lo largo de la serie,
+                Hee-kyung también vive
+                su propio crecimiento personal y romántico, desarrollando una relación inesperada que añade humor y
+                profundidad a su
+                personaje. </p>
+            <button onclick="cerrarDescripcion('heekyung')" class="btn-volver">Volver</button>
         </div>
 
         <div id="descripcion-suHo" class="descripcion-modal">
@@ -152,10 +184,23 @@
                 dentro del triángulo amoroso.</p>
             <button onclick="cerrarDescripcion('seoJun')" class="btn-volver">Volver</button>
         </div>
+
+        <div id="descripcion-suJin" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('suJin')" class="cerrar">&times;</span>
+            <img src="img/Kang_su_jin.jpg" alt="Kang Su jin" class="perfil-img-grande">
+            <h3>Kang Su-jin</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Kang Su-jin es una chica popular y atractiva que
+                inicialmente se muestra segura y encantadora, pero esconde un lado
+                manipulador y egoísta. Su inseguridad y deseo de atención la llevan a sabotear a Lim Ju-kyung y a crear
+                conflictos para
+                asegurar su lugar social. Aunque proyecta una imagen de confianza, su comportamiento refleja una
+                constante necesidad de
+                sobresalir, en gran parte debido a la presión de su padre, quien le exige ser la mejor en el instituto.
+            </p>
+            <button onclick="cerrarDescripcion('suJin')" class="btn-volver">Volver</button>
+        </div>
+
     </section>
-
-
-
 
     <section id="portfolio">
         <div class="content-wrapper">
