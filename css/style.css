@@ -128,6 +128,64 @@ h2 {
 }
 
 
+/* Contenedor principal de episodios */
+.episodio-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 20px;
+	background-color: #333;
+	border-radius: 10px;
+	max-width: 800px;
+	margin: auto;
+}
+
+/* Botones de navegación */
+.flecha-izquierda,
+.flecha-derecha {
+	background-color: #ff0080;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.flecha-izquierda:hover,
+.flecha-derecha:hover {
+	background-color: #ff66a3;
+}
+
+/* Contenedor de contenido del episodio */
+.episodio-contenido {
+	text-align: center;
+	margin: 0 20px;
+}
+
+/* Imagen del episodio */
+.episodio-imagen {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+/* Título y resumen del episodio */
+#tituloEpisodio {
+	color: #ff0080;
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+#resumenEpisodio {
+	font-family: 'Arial', sans-serif;
+	font-size: 16px;
+}
+
 .subtitulo {
 	font-size: 1.5em;
 	font-weight: bold;
