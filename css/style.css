@@ -41,14 +41,28 @@ h2 {
 	padding: 20px;
 }
 
+.titulo-principal {
+	font-family: 'Brush Script MT', cursive;
+	/* Asegúrate de que la fuente esté correctamente cargada */
+	font-size: 24px;
+	/* Ajusta según el tamaño de letra que prefieras */
+	color: #ff1493;
+	/* Cambia al color de los títulos que estás usando */
+	font-weight: bold;
+	text-transform: uppercase;
+	/* Cualquier otro estilo que estés usando en los demás títulos */
+}
+
 
 /* Estilo para el título de la sección */
 .titulo-personajes {
+	padding-top: 30px;
 	font-family: 'Brush Script MT', cursive;
 	color: #ff1493;
 	font-size: 3em;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	margin-top: 20px;
 }
 
 .personajes-container {
@@ -183,7 +197,7 @@ h2 {
 
 #resumenEpisodio {
 	font-family: 'Arial', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .subtitulo {
@@ -208,6 +222,12 @@ h2 {
 }
 
 /* styles.css */
+
+#Contacto {
+	/* o la clase/ID que estés usando */
+	margin-top: 300px;
+	/* Ajusta el valor según sea necesario */
+}
 
 body {
 	background-color: #1c1c1c;
@@ -572,6 +592,7 @@ bootstrap.min.css:5 .navbar-toggle {
 }
 
 #portfolio h2 {
+	padding-top: 50px;
 	font-size: 3em;
 	color: #ff1493;
 	/* Puedes ajustar el color si deseas */

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>True Beauty</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/lightbox.css">
+-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#main-nav">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="titulo-principal">True Beauty</a>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="personajes.html">Personajes</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="Personajes">Personajes</a></li>-->
+                        <li><a href="episodios.html">Episodios</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="Episodios">Episodios</a></li>-->
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="portfolio">Galeria</a></li>-->
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="Contacto">Contacto</a></li>-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section id="Personajes" class="content-wrapper">
+        <h2 class="titulo-personajes">Personajes principales</h2>
+        <div class="personajes-container">
+            <div class="personaje">
+                <img src="img/ju_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img">
+                <h3 class="nombre-personaje">Lim Ju Kyung</h3>
+                <button onclick="verDescripcion('juKyung')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/lee_su_ho.jpg" alt="Lee Su Ho" class="perfil-img">
+                <h3 class="nombre-personaje">Lee Su Ho</h3>
+                <button onclick="verDescripcion('suHo')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/han_seo_jun.jpg" alt="Han Seo Jun" class="perfil-img">
+                <h3 class="nombre-personaje">Han Seo Jun</h3>
+                <button onclick="verDescripcion('seoJun')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/Kang_su_jin.jpg" alt="Kang Su jin" class="perfil-img">
+                <h3 class="nombre-personaje">Kang Su-jin</h3>
+                <button onclick="verDescripcion('suJin')" class="btn-ver">Ver</button>
+            </div>
+        </div>
+
+        <div id="descripcion-juKyung" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('juKyung')" class="cerrar">&times;</span>
+            <img src="img/ju_kyung.jpg" alt="Lim Ju kyung" class="perfil-img-grande">
+            <h3>Lim Ju-kyung</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Lim Ju-kyung es una adolescente alegre, bondadosa y un
+                poco torpe, pero marcada por una profunda inseguridad respecto a
+                su apariencia. Antes de aprender a maquillarse, se sentía avergonzada y vulnerable, debido a que había
+                sido víctima de
+                burlas y acoso escolar. Con el maquillaje, logra ocultar sus complejos y, al mismo tiempo, transformarse
+                en alguien que
+                considera más "aceptable" para los demás. Aunque se muestra con una personalidad vibrante y positiva,
+                por dentro sigue
+                luchando con el temor a ser juzgada o rechazada si se descubre su verdadero rostro. A lo largo de la
+                serie, su relación
+                con Lee Su Ho y Han Seo Jun la ayuda a crecer y descubrir que su valor va más allá de su apariencia
+                física. </p>
+            <button onclick="cerrarDescripcion('juKyung')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-suHo" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('suHo')" class="cerrar">&times;</span>
+            <img src="img/lee_su_ho.jpg" alt="Lee Su Ho" class="perfil-img-grande">
+            <h3>Lee Su Ho</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Lee Su Ho, es un joven reservado y distante debido a la
+                pérdida de su mejor amigo y su complicada relación con su padre.
+                Aunque inicialmente parece frío, en realidad es alguien sensible. A medida que la serie avanza, Su Ho
+                muestra su lado
+                cariñoso, especialmente con Lim Ju kyung. Su evolución emocional es clave en el desarrollo romántico de
+                la historia.</p>
+            <button onclick="cerrarDescripcion('suHo')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-seoJun" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('seoJun')" class="cerrar">&times;</span>
+            <img src="img/han_seo_jun.jpg" alt="Han Seo Jun" class="perfil-img-grande">
+            <h3>Han Seo Jun</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Han Seo-jun, es un "chico rebelde" con un mucho ego. Suele
+                meterse en problemas, es protector y leal,
+                especialmente con
+                su familia y Lim Ju kyung, por quien tendrá sentimientos. Marcado por la muerte de su amigo Jung Se
+                Yeon, muestra su
+                lado sensible y un fuerte sentido de justicia. Su evolución lo convierte en un pretendiente fiel y un
+                personaje complejo
+                dentro del triángulo amoroso.</p>
+            <button onclick="cerrarDescripcion('seoJun')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-suJin" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('suJin')" class="cerrar">&times;</span>
+            <img src="img/Kang_su_jin.jpg" alt="Kang Su jin" class="perfil-img-grande">
+            <h3>Kang Su-jin</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Kang Su-jin es una chica popular y atractiva que
+                inicialmente se muestra segura y encantadora, pero esconde un lado
+                manipulador y egoísta. Su inseguridad y deseo de atención la llevan a sabotear a Lim Ju-kyung y a crear
+                conflictos para
+                asegurar su lugar social. Aunque proyecta una imagen de confianza, su comportamiento refleja una
+                constante necesidad de
+                sobresalir, en gran parte debido a la presión de su padre, quien le exige ser la mejor en el instituto.
+            </p>
+            <button onclick="cerrarDescripcion('suJin')" class="btn-volver">Volver</button>
+        </div>
+
+        <h2 class="titulo-personajes">Personajes secundarios</h2>
+        <div class="personajes-container">
+            <div class="personaje">
+                <img src="img/hee_kyung.jpg" alt="Lim Ju Kyung" class="perfil-img">
+                <h3 class="nombre-personaje">Lim Hee-kyung</h3>
+                <button onclick="verDescripcion('heekyung')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/hyun_sook.jpg" alt="Hong Hyun sook" class="perfil-img">
+                <h3 class="nombre-personaje">Hong Hyun_sook</h3>
+                <button onclick="verDescripcion('Hyunsoo')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/Jae_pil.jpg" alt="Lim Jae pil" class="perfil-img">
+                <h3 class="nombre-personaje">Lim Jae-pil</h3>
+                <button onclick="verDescripcion('Jaepil')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/Ju_young.jpg" alt="Lim Ju young" class="perfil-img">
+                <h3 class="nombre-personaje">Lim Ju-young</h3>
+                <button onclick="verDescripcion('Juyoung')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/soo_ah.jpg" alt="Choi Soo ah" class="perfil-img">
+                <h3 class="nombre-personaje">Choi Soo-ah</h3>
+                <button onclick="verDescripcion('sooah')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/joon-woo.jpg" alt="Han Joon woo" class="perfil-img">
+                <h3 class="nombre-personaje">Han Joon-woo</h3>
+                <button onclick="verDescripcion('joonwoo')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/se yeon.jpg" alt="jung se yeon" class="perfil-img">
+                <h3 class="nombre-personaje">jung se yeon</h3>
+                <button onclick="verDescripcion('seyeon')" class="btn-ver">Ver</button>
+            </div>
+
+            <div class="personaje">
+                <img src="img/sung_yong.jpg" alt="lee sung yong" class="perfil-img">
+                <h3 class="nombre-personaje">lee sung yong</h3>
+                <button onclick="verDescripcion('sungyong')" class="btn-ver">Ver</button>
+            </div>
+        </div>
+
+        <div id="descripcion-heekyung" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('heekyung')" class="cerrar">&times;</span>
+            <img src="img/hee_kyung.jpg" alt="Lim Hee-kyung" class="perfil-img-grande">
+            <h3>Lim Hee-kyung</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Lim Hee-kyung es la hermana mayor de Ju-kyung, conocida
+                por su personalidad segura, extrovertida y carismática. A
+                diferencia de su hermana, se muestra confiada y directa, siempre expresando lo que piensa sin reservas.
+                Es un gran apoyo
+                para Ju-kyung, alentándola a aceptarse y a enfrentar sus inseguridades. A lo largo de la serie,
+                Hee-kyung también vive
+                su propio crecimiento personal y romántico, desarrollando una relación inesperada que añade humor y
+                profundidad a su
+                personaje. </p>
+            <button onclick="cerrarDescripcion('heekyung')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-Hyunsoo" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('Hyunsoo')" class="cerrar">&times;</span>
+            <img src="img/Hyun_sook.jpg" alt="Hong Hyun sook" class="perfil-img-grande">
+            <h3>Hong Hyun_sook</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Hong Hyun-sook es la madre de Lim Ju-kyung y Lim
+                Hee-kyung. Es una mujer estricta, trabajadora y con una personalidad
+                fuerte. Se preocupa mucho por el bienestar de su familia, aunque su carácter impulsivo y sus altos
+                estándares,
+                especialmente hacia Ju-kyung, pueden hacerla parecer dura y exigente. Su interés en la apariencia y
+                éxito de sus hijos
+                se debe a su deseo de darles un futuro seguro, aunque en ocasiones genera tensiones familiares. Con el
+                tiempo, Hyun-sook
+                aprende a valorar y apoyar más las decisiones y personalidad de sus hijos, mostrando un lado más
+                comprensivo y cariñoso.</p>
+            <button onclick="cerrarDescripcion('Hyunsoo')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-Jaepil" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('Jaepil')" class="cerrar">&times;</span>
+            <img src="img/Jae_pil.jpg" alt="Lim Jae pil" class="perfil-img-grande">
+            <h3>Lim Jae-pil</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Lim Jae-pil es el padre de Ju-kyung, Hee-kyung y Lim
+                Ju-young. Es un
+                hombre relajado, algo despistado y con buen sentido del humor, a
+                menudo contrastando con el carácter más estricto de su esposa, Hong Hyun-sook. Aunque suele evitar los
+                conflictos
+                familiares y no siempre toma decisiones responsables, tiene un gran cariño por sus hijos y apoya a
+                Ju-kyung en su camino
+                hacia la autoaceptación. Su actitud despreocupada y su relación cercana con sus hijos aportan toques de
+                comedia y
+                ternura a la dinámica familiar.</p>
+            <button onclick="cerrarDescripcion('Jaepil')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-Juyoung" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('Juyoung')" class="cerrar">&times;</span>
+            <img src="img/Ju_young.jpg" alt="Lim Ju young" class="perfil-img-grande">
+            <h3>Lim Ju-young</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Lim Ju-young es el hermano menor de Ju-kyung y Hee-kyung.
+                Es travieso, directo y, a menudo, molesta a su hermana
+                Ju-kyung, con quien mantiene una típica relación de amor-odio entre hermanos. Aunque suele burlarse de
+                ella y no pierde
+                oportunidad de hacer comentarios graciosos sobre su maquillaje, en el fondo se preocupa por su
+                bienestar. Su sentido del
+                humor y sus ocurrencias aportan momentos cómicos a la serie, y, pese a sus bromas, demuestra cariño y
+                apoyo hacia su
+                familia.
+            </p>
+            <button onclick="cerrarDescripcion('Juyoung')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-sooah" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('sooah')" class="cerrar">&times;</span>
+            <img src="img/soo_ah.jpg" alt="Choi Soo ah" class="perfil-img-grande">
+            <h3>Choi Soo-ah</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Choi Soo-ah es la mejor amiga de Lim Ju-kyung. Es dulce,
+                leal y muy solidaria, siempre apoyando a
+                Ju-kyung sin juzgarla. Con una personalidad optimista y amable, Soo-ah es conocida por ser simpática y
+                genuina con
+                todos, creando un ambiente de amistad sincera. Aunque no pertenece al grupo popular, es muy querida por
+                quienes la
+                rodean, y su presencia aporta calidez y estabilidad en la vida de Ju-kyung, demostrando el valor de una
+                amistad
+                auténtica en medio de los desafíos de la adolescencia.
+            </p>
+            <button onclick="cerrarDescripcion('sooah')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-joonwoo" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('joonwoo')" class="cerrar">&times;</span>
+            <img src="img/joon-woo.jpg" alt="Han Joon woo" class="perfil-img-grande">
+            <h3>Han Joon-woo</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Han Joon-woo es el amable y reservado profesor de
+                literatura en True Beauty. Con una personalidad tranquila y
+                comprensiva, se preocupa genuinamente por sus estudiantes y busca ayudarlos a superar sus dificultades.
+                A lo largo de la
+                serie, desarrolla una relación romántica con Lim Hee-kyung, la hermana de Ju-kyung, lo que añade una
+                dimensión divertida
+                y dulce a su personaje. A pesar de su carácter serio y reservado en el trabajo, Joon-woo muestra un lado
+                más cálido y
+                relajado en su vida personal, convirtiéndose en un personaje querido por su dedicación y bondad.
+            </p>
+            <button onclick="cerrarDescripcion('joonwoo')" class="btn-volver">Volver</button>
+        </div>
+
+        <div id="descripcion-seyeon" class="descripcion-modal">
+            <span onclick="cerrarDescripcion('seyeon')" class="cerrar">&times;</span>
+            <img src="img/se yeon.jpg" alt="jung se yeon" class="perfil-img-grande">
+            <h3>jung se yeon</h3>
+            <p style="font-size: 1.5em; color: antiquewhite;">Jung Se-yeon era el mejor amigo de Lee Su-ho y Han Seo-jun
+                en True Beauty. Su carácter era sensible, amable y reservado.
+                Luchaba con problemas personales y la presión de la industria musical, que lo llevaron a situaciones
+                difíciles. Su
+                muerte impacta profundamente a Su-ho y Seo-jun, dejando una huella de tristeza y culpa en ambos, y se
+                convierte en una
+                motivación para que ambos amigos cambien y enfrenten sus propios conflictos. Aunque su presencia es
+                breve en la
+                historia, Se-yeon es un personaje clave que influye en el desarrollo emocional de quienes lo rodearon.
+            </p>
+            <button onclick="cerrarDescripcion('seyeon')" class="btn-volver">Volver</button>
+
+            <div id="descripcion-sungyong" class="descripcion-modal">
+                <span onclick="cerrarDescripcion('sungyong')" class="cerrar">&times;</span>
+                <img src="img/sung_yong.jpg" alt="lee sung yong" class="perfil-img-grande">
+                <h3>lee sung yong</h3>
+                <p style="font-size: 1.5em; color: antiquewhite;">Lee Sung-yong es el padre de Lee Su-ho en True Beauty.
+                    Es un famoso actor de cine, pero su relación con Su-ho es
+                    complicada y distante. La dedicación de Sung-yong a su carrera y su imagen pública ha hecho que
+                    Su-ho se sienta
+                    abandonado y resentido hacia él, especialmente tras la muerte de su amigo Jung Se-yeon, evento en el
+                    cual Su-ho siente
+                    que su padre no mostró el apoyo necesario. Sung-yong es un personaje cuya falta de atención y
+                    empatía hacia su hijo
+                    afecta profundamente a Su-ho, influyendo en su carácter reservado y en su lucha interna a lo largo
+                    de la serie.
+                </p>
+                <button onclick="cerrarDescripcion('sungyong')" class="btn-volver">Volver</button>
+            </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/botonVer.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // navigation click actions 
+            $('.scroll-link').on('click', function (event) {
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+            });
+            // scroll to top action
+            $('.scroll-top').on('click', function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+            });
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function (event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
+        });
+        // scroll function
+        function scrollToID(id, speed) {
+            var offSet = 50;
+            var targetOffset = $(id).offset().top - offSet;
+            var mainNav = $('#main-nav');
+            $('html,body').animate({ scrollTop: targetOffset }, speed);
+            if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+            }
+        }
+        if (typeof console === "undefined") {
+            console = {
+                log: function () { }
+            };
+        }
+    </script>
+
+</body>
+
+</html>

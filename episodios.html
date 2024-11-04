@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>True Beauty</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/hero-slider.css">
+-->
+    <!--<link rel="stylesheet" href="css/owl-carousel.css">
+-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/lightbox.css">
+-->
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#main-nav">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="titulo-principal">True Beauty</a>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="personajes.html">Personajes</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="Personajes">Personajes</a></li>-->
+                        <li><a href="episodios.html">Episodios</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="Episodios">Episodios</a></li>-->
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="portfolio">Galeria</a></li>-->
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <!--<li><a href="#" class="scroll-link" data-id="Contacto">Contacto</a></li>-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section id="Episodios" style="text-align: center; padding: 20px;">
+        <h2 style="color: #ff1493;">Episodios</h2>
+        <div id="navegacionEpisodios" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+
+            <!-- Flecha izquierda para episodio anterior -->
+            <button onclick="cambiarEpisodio(-1)"
+                style="background: none; border: none; font-size: 24px; color: #ff1493; cursor: pointer;">
+                &#9664;
+            </button>
+
+            <!-- Contenedor del contenido del episodio -->
+            <div id="contenidoEpisodio" style="max-width: 500px;">
+                <h3 id="tituloEpisodio">Episodio 1</h3>
+                <img id="imagenEpisodio" src="img/episodio1.jpg" alt="Imagen del episodio"
+                    style="width: 100%; height: auto; border-radius: 8px;">
+                <p id="resumenEpisodio">En el primer episodio de True Beauty, Lim Ju-kyung, una adolescente con baja
+                    autoestima, sufre acoso constante en la
+                    escuela debido a su apariencia física. Cansada de los insultos y el rechazo, Ju-kyung llega a pensar
+                    en quitarse la
+                    vida, pero se detiene y decide buscar una nueva forma de enfrentar la situación. Descubre el
+                    maquillaje y, a través de
+                    tutoriales, aprende a transformarse. Cuando se muda a una nueva escuela, su apariencia renovada la
+                    convierte en una de
+                    las chicas más populares, aunque vive con el temor de que alguien descubra su verdadero rostro. En
+                    su nuevo entorno,
+                    conoce a Lee Su Ho, un chico atractivo y misterioso que parece intuir que Ju-kyung oculta algo
+                    importante.</p>
+            </div>
+
+            <!-- Flecha derecha para episodio siguiente -->
+            <button onclick="cambiarEpisodio(1)"
+                style="background: none; border: none; font-size: 24px; color: #ff1493; cursor: pointer;">
+                &#9654;
+            </button>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/botonVer.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
